@@ -1,73 +1,80 @@
-body{
-    background: #004e6d;
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+header{
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
-#logo-trans{
-    transform: rotateY(40deg);
-    animation: logo 2s infinite;
-    animation-direction: alternate;
+.nav-dropdown{
+    background-color: rgba(0, 0, 0, 0.3);
 }
-@keyframes logo{
-    0% {
-      transform: rotateY(0);
-    }
-    100% {
-      transform: rotateY(70deg);
-    }
-}
-#heading{
-    font-family: cursive;
-    font-size: 3.5em;
-    text-align: center;
-    opacity: 0.8;
-    font-weight: bold;
-}
-#sub{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.link{
+    color:cornflowerblue;
     font-size: 2em;
-    opacity: 0.4;
-    text-align: center;
-    font-weight: bold;
 }
-#under-dev{
-        text-align: center;
-        position: relative;
-        font-family: sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 2em;
-        letter-spacing: 0.5em;
-        overflow: hidden;
-        background: linear-gradient(90deg, #000, #fff, #000);
-        background-repeat: no-repeat;
-        background-size: 80%;
-        animation: animate 3s linear infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgba(255, 255, 255, 0);
-      }
-      
-@keyframes animate {
-    0% {
-         background-position: -500%;
-        }
-    100% {
-          background-position: 500%;
-        }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+#main-heading{
+    font-family: 'Bangers', cursive;
 }
-#insta-btn{
-    transition: transform 1.5s;
+#home{
+    height: 55em;
+    background: #136a8a;
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);
+    background: linear-gradient(to right, #267871, #136a8a);
 }
-#insta-btn:hover{
-    transform: rotate(1080deg)
+.para-content{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    font-size: 1.5em;
 }
-#yt-btn{
-    transition: transform 0.5s;
+.para-content a{
+    font-size: 1em;
 }
-#yt-btn:hover{
-    transform: rotate(1080deg)
+.content-heading{
+    font-size: 2.25em;
+    opacity: 0.7;
 }
-#discord-btn{
-    transition: transform 0.5s;
+#about{
+    height: 50rem;
 }
-#discord-btn:hover{
-    transform: rotate(1080deg)
+#videos{
+    height: 53em;
 }
+#gallery{
+    height: 50em;
+    z-index: 0;
+}
+#about{
+    background: #348F50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#videos{
+    background: #0BE5AE;
+background: -webkit-linear-gradient(top left, #0BE5AE, #065F9C);
+background: -moz-linear-gradient(top left, #0BE5AE, #065F9C);
+background: linear-gradient(to bottom right, #0BE5AE, #065F9C);
+}
+
+/*
+.navbar-link{
+    display: block;
+    color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    position: relative;
+    box-shadow: 0 6px 10px rgba(179, 179, 179, .5);
+}
+.navslide{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #3641b7;
+    transition: 0.4s;
+}
+*/
